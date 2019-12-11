@@ -1,0 +1,126 @@
+@import "../../utils/master";
+
+.barra-superior {
+    align-items: center;
+    background: $barra-superior-color-escuro;
+    color: #fff;
+    display: grid;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+    justify-content: space-evenly;
+    position: relative;
+    width: 100vw;
+    z-index: 1;
+
+    @include for-phone-only {
+        grid-template-columns: 1fr 2fr 2fr;
+        height: $height-barra-superior-menor;
+    }
+
+    @include for-tablet-portrait-up {
+        grid-template-columns: 1fr 2fr 3fr;
+        height: $height-barra-superior-maior;
+    }
+
+    .barra-superior__foto {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        grid-column: 1;
+        margin: 0 0.65rem;
+        place-self: center;
+
+        @include for-phone-only {
+            height: 48px;
+            width: 48px;
+        }
+
+        @include for-tablet-portrait-up {
+            height: 96px;
+            width: 96px;
+        }
+    }
+
+    .barra-superior__info {
+        display: grid;
+        height: 100%;
+        grid-column: 2;
+        text-align: left;
+    }
+
+    .barra-superior__nome {
+        align-self: end;
+        font-family: monospace;
+        font-weight: bold;
+        grid-row: 1;
+        margin-bottom: 0;
+        text-transform: capitalize;
+
+        @include for-phone-only {
+            font-size: 1rem;
+        }
+
+        @include for-tablet-portrait-up {
+            font-size: 1.85rem;
+        }
+    }
+
+    .barra-superior__status {
+        align-self: start;
+        grid-row: 2;
+        margin-top: 0;
+        text-transform: lowercase;
+
+        @include for-phone-only {
+            font-size: 0.85rem;
+        }
+
+        @include for-tablet-portrait-up {
+            font-size: 1.35rem;
+        }
+    }
+
+    .barra-superior__modal-cardapio {
+        align-self: center;
+        background-color: white;
+        border: none;
+        color: $barra-superior-color-claro;
+        cursor: pointer;
+        font-weight: bolder;
+        grid-column: 3;
+        justify-self: center;
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+        padding: 0 25px 0 25px;
+        text-transform: uppercase;
+        transition-delay: 115ms;
+
+        @include for-phone-only {
+            font-size: 0.55rem;
+            height: 2rem;
+            width: 6rem;
+        }
+
+        @include for-tablet-portrait-up {
+            font-size: 0.85rem;
+            height: 3.25rem;
+            width: 10rem;
+        }
+
+        @include for-desktop-up {
+            font-size: 1rem;
+            height: 4rem;
+            width: 15rem;
+        }
+
+        &:hover {
+            background-color: $barra-superior-color-claro;
+            border: 1px solid $barra-superior-color-claro;
+            color: white;
+            transition-delay: 105ms;
+        }
+    }
+
+
+}

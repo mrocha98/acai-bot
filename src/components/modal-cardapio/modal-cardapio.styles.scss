@@ -1,0 +1,33 @@
+@import "../../utils/master";
+
+.modal{
+  display: none;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+
+  @include for-phone-only  {
+    left: 15%;
+    top: 9%;
+  }
+
+  @include for-tablet-portrait-up  {
+    left: 25%;
+    top: 10%;
+  }
+
+  @include for-desktop-up {
+    left: 28%;
+    top: 12%;
+  }
+
+  @include for-big-desktop-up {
+    left: 32%;
+    top: 15%;
+  }
+}
+
+.show{
+  display: block !important;
+}

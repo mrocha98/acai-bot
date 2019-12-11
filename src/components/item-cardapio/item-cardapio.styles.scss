@@ -1,0 +1,35 @@
+@import "../../utils/master";
+
+.item-cardapio {
+  color: #0a0a0a;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: space-around;
+
+  @include for-phone-only {
+    font-size: 0.65rem;;
+  }
+
+  @include for-tablet-portrait-up {
+    font-size: 1.28rem;
+  }
+
+  @include for-desktop-up {
+    font-size: 1.35rem;
+  }
+
+  .item-cardapio__nome {
+    grid-column: 1;
+    justify-self: start;
+    margin-left: $side-margin;
+    text-align: left;
+    text-transform: capitalize;
+  }
+
+  .item-cardapio__preco {
+    justify-self: right;
+    grid-column: 2;
+    font-style: italic;
+    margin-right: $side-margin;
+  }
+}

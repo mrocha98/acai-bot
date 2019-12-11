@@ -1,0 +1,27 @@
+@import "../../utils/master";
+
+.chat {
+  overflow-y: scroll;
+  width: 100vw;
+
+  @include for-phone-only {
+    height: calc(99vh - #{$height-barra-superior-menor});
+  }
+
+  @include for-tablet-portrait-up {
+    height: calc(99vh - #{$height-barra-superior-maior});
+  }
+
+  .css-mfy564 {
+    background-image: url("../../assets/whatsapp_wallpaper.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .message {
+    background-color: transparent !important;
+  }
+
+}

@@ -1,0 +1,127 @@
+@import "../../utils/master";
+
+.cardapio {
+  background-color: wheat;
+  box-shadow: $box-shador-cardapio;
+  font-family: 'Courgette', cursive;
+  -moz-box-shadow: $box-shador-cardapio;
+  overflow-y: scroll;
+  padding-bottom: 5px;
+  -webkit-box-shadow: $box-shador-cardapio;
+
+  @include for-phone-only {
+    height: 23rem;
+    width: 15rem;
+  }
+
+  @include for-tablet-portrait-up {
+    height: 30rem;
+    width: 25rem;
+  }
+
+  @include for-desktop-up {
+    height: 35rem;
+    width: 36rem;
+  }
+
+  .cardapio__banner {
+    position: relative;
+
+    .cardapio__imagem {
+      filter: blur(2px);
+      width: 100%;
+    }
+
+    .cardapio__titulo {
+      color: #fffeda;
+      position: absolute;
+      left: 50%;
+      text-shadow: 0 4px 4px rgba(0, 0, 0, .75);
+      text-align: center;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+
+      @include for-phone-only {
+        font-size: 2.5rem;
+      }
+
+      @include for-tablet-portrait-up {
+        font-size: 3.375rem;
+      }
+
+      @include for-desktop-up {
+        font-size: 5.0625rem;
+      }
+    }
+
+    .cardapio__fechar {
+      background: none;
+      border: none;
+      cursor: pointer;
+      float: right;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+
+      @include for-phone-only {
+        left: 90%;
+        top: 3%;
+
+        .cardapio__icone-fechar {
+          height: 1.25rem;
+          width: 1.25rem;
+        }
+      }
+
+      @include for-tablet-portrait-up {
+        left: 88%;
+        top: 5%;
+
+        .cardapio__icone-fechar {
+          height: 2.5rem;
+          width: 2.5rem;
+        }
+      }
+
+      @include for-desktop-up {
+        left: 90%;
+        top: 5%;
+
+        .cardapio__icone-fechar {
+          height: 3rem;
+          width: 3rem;
+        }
+      }
+
+      &:hover {
+        color: $fechar;
+      }
+    }
+  }
+
+  .cardapio__adicionais, .cardapio__tamanhos {
+    color: black;
+    font-weight: bold;
+    margin-left: $side-margin;
+
+    @include for-phone-only {
+      font-size: 1.025rem;;
+    }
+
+    @include for-tablet-portrait-up {
+      font-size: 1.35rem;
+    }
+
+    @include for-desktop-up {
+      font-size: 2.05rem;
+    }
+  }
+
+  .cardapio__itens {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+}

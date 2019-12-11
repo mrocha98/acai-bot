@@ -1,0 +1,44 @@
+@import "../../utils/master";
+
+.container-validacao {
+  background: #d0d1cd;
+  display: grid;
+  height: 100%;
+  width: 100%;
+}
+
+.form-autenticacao {
+  place-self: center;
+
+  @include for-phone-only {
+    width: 100%;
+  }
+
+  @include for-tablet-portrait-up {
+    width: 55%;
+  }
+
+  @include for-tablet-landscape-up {
+    width: 35%;
+  }
+
+  .form-autenticacao__button {
+    align-self: center;
+    background-color: $barra-superior-color-claro;
+    border: 1px solid $barra-superior-color-claro;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    transition-delay: 115ms;
+
+    &:hover {
+      background-color: #424143;
+      border: 1px solid #424143;
+    }
+  }
+
+}

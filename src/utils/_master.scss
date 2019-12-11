@@ -1,0 +1,35 @@
+/**
+ * @author Matheus Rocha <matheus.silva@gsw.com.br>
+ * Arquivo para centralizar variáveis e mixins do SASS
+ * */
+
+/* cores */
+$barra-superior-color-escuro: #005e54;
+$barra-superior-color-claro: #009a8e;
+$fechar: #ff4852;
+
+/* tamanhos e espaçamentos */
+$side-margin: 2.5rem;
+$espacamento-input: .5rem;
+$height-barra-superior-menor: 5rem;
+$height-barra-superior-maior: 8rem;
+
+/* media querys */
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
+/* outros */
+$box-shador-cardapio: 8px 9px 10px 1px rgba(0,0,0,0.60);

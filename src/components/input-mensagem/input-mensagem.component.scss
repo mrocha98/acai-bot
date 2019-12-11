@@ -1,0 +1,32 @@
+@import '../../utils/master';
+
+
+.formularioMensagem {
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    margin-top: .65rem;
+    z-index: 2;
+
+    .formularioMensagem__emoji {
+      grid-column: 1;
+      justify-self: end;
+      margin-right: $espacamento-input;
+    }
+
+    .formularioMensagem__input {
+      grid-column: 2;
+      width: 65vw;
+    }
+
+    .formularioMensagem__enviar {
+      align-self: start;
+      background-color: $barra-superior-color-escuro;
+      border-radius: 50%;
+      grid-column: 3;
+      height: 3rem;
+      margin-left: $espacamento-input;
+      width: 3rem;
+    }
+
+}
