@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c4ef6204cad71978c3b44cf408b8cbf1",
+    "revision": "d96fc3ecab2a90a8d1ec4c4b5abed2b7",
     "url": "/acai-bot/index.html"
   },
   {
