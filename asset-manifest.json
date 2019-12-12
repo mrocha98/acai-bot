@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/acai-bot/static/css/main.74f7891b.chunk.css",
-    "main.js": "/acai-bot/static/js/main.3d6f8110.chunk.js",
-    "main.js.map": "/acai-bot/static/js/main.3d6f8110.chunk.js.map",
+    "main.js": "/acai-bot/static/js/main.9bb9d7c7.chunk.js",
+    "main.js.map": "/acai-bot/static/js/main.9bb9d7c7.chunk.js.map",
     "runtime-main.js": "/acai-bot/static/js/runtime-main.eb433ee0.js",
     "runtime-main.js.map": "/acai-bot/static/js/runtime-main.eb433ee0.js.map",
     "static/css/2.84a4b543.chunk.css": "/acai-bot/static/css/2.84a4b543.chunk.css",
-    "static/js/2.017ac8f2.chunk.js": "/acai-bot/static/js/2.017ac8f2.chunk.js",
-    "static/js/2.017ac8f2.chunk.js.map": "/acai-bot/static/js/2.017ac8f2.chunk.js.map",
+    "static/js/2.821ab169.chunk.js": "/acai-bot/static/js/2.821ab169.chunk.js",
+    "static/js/2.821ab169.chunk.js.map": "/acai-bot/static/js/2.821ab169.chunk.js.map",
     "index.html": "/acai-bot/index.html",
-    "precache-manifest.5b1ff638c5faa12feb23902a4e153c07.js": "/acai-bot/precache-manifest.5b1ff638c5faa12feb23902a4e153c07.js",
+    "precache-manifest.ffe8048f122d38837d9866e083632088.js": "/acai-bot/precache-manifest.ffe8048f122d38837d9866e083632088.js",
     "service-worker.js": "/acai-bot/service-worker.js",
     "static/css/2.84a4b543.chunk.css.map": "/acai-bot/static/css/2.84a4b543.chunk.css.map",
     "static/css/main.74f7891b.chunk.css.map": "/acai-bot/static/css/main.74f7891b.chunk.css.map",
@@ -18,8 +18,8 @@
   "entrypoints": [
     "static/js/runtime-main.eb433ee0.js",
     "static/css/2.84a4b543.chunk.css",
-    "static/js/2.017ac8f2.chunk.js",
+    "static/js/2.821ab169.chunk.js",
     "static/css/main.74f7891b.chunk.css",
-    "static/js/main.3d6f8110.chunk.js"
+    "static/js/main.9bb9d7c7.chunk.js"
   ]
 }
